@@ -1,0 +1,162 @@
+.sidebar {
+    width: 260px;
+    background-color: #003a6b;
+    color: #FFFFFF;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.sidebar .menu-item {
+    padding: 12px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 5px;
+    transition: background-color 0.2s;
+}
+
+.sidebar .menu-item:hover {
+    background-color: #004a76;
+}
+
+.sidebar .menu-item.active {
+    background-color: #005b96;
+}
+.issue-task-container {
+    margin-left: 270px;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+}
+.issue-task-form {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.issue-task-input {
+    flex: 1;
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    margin-right: 10px;
+    max-width: 300px;
+}
+
+.issue-task-button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.issue-task-button:hover {
+    background-color: #0056b3;
+}
+
+/* Edit Form Styles */
+.issue-task-edit-form {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.issue-task-edit-form input {
+    flex: 1;
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    margin-right: 10px;
+}
+
+.issue-task-edit-form button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.issue-task-edit-form button:hover {
+    background-color: #218838;
+}
+.issue-task-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.issue-task-list-item {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    height: 40px; 
+}
+
+.issue-task-list-item:last-child {
+    border-bottom: none;
+}
+
+.issue-task-list-item-content {
+    flex-grow: 1;
+    padding-right: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    max-width: 70%;
+}
+
+.issue-task-list-item-buttons {
+    margin-left: auto; 
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.issue-task-list-item button {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.issue-task-list-item .edit-button {
+    background-color: #ffc107;
+}
+
+.issue-task-list-item .edit-button:hover {
+    background-color: #e0a800;
+}
+
+.issue-task-list-item .delete-button {
+    background-color: #dc3545;
+}
+
+.issue-task-list-item .delete-button:hover {
+    background-color: #c82333;
+}
